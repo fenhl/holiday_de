@@ -102,7 +102,7 @@ impl GermanHoliday {
 }
 
 fn bus_und_bettag(year: i32) -> Option<NaiveDate> {
-    let reference_date = NaiveDate::from_ymd(year, 11, 23);
+    let reference_date = NaiveDate::from_ymd_opt(year, 11, 23)?;
     let weekday_ordinal = i64::from(reference_date.weekday().num_days_from_monday());
     let duration_to_previous_wednesday = if weekday_ordinal < 3 {
         Duration::days(-(weekday_ordinal + 5))
