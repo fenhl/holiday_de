@@ -145,9 +145,9 @@ impl GermanRegion {
             }
             ThueringenMitFronleichnam => {
                 if year >= 2019 {
-                    &[Fronleichnam, Reformationstag]
-                } else {
                     &[Fronleichnam, Weltkindertag, Reformationstag]
+                } else {
+                    &[Fronleichnam, Reformationstag]
                 }
             }
         }
