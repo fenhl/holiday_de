@@ -15,4 +15,4 @@ warnings = "deny"
 
 [dependencies]
 chrono = "0.4"
-computus = "1.0.0"
+computus = "2"
